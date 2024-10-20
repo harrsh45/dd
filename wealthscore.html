@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Health Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Company Fit</th>
+                    <th>Activity</th>
+                    <th>Customer Health Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row for Slack -->
+                <tr>
+                    <td>Slack<br><small>9 users</small></td>
+                    <td><div class="fit fit-good"></div></td>
+                    <td><div class="activity-bar"><div class="activity-progress" style="width: 70%;"></div></div></td>
+                    <td><canvas id="healthScore1" width="80" height="80"></canvas></td>
+                </tr>
+                <!-- Row for Apple -->
+                <tr>
+                    <td>Apple<br><small>12 users</small></td>
+                    <td><div class="fit fit-good"></div></td>
+                    <td><div class="activity-bar"><div class="activity-progress" style="width: 60%;"></div></div></td>
+                    <td><canvas id="healthScore2" width="80" height="80"></canvas></td>
+                </tr>
+                <!-- Row for HubSpot -->
+                <tr>
+                    <td>HubSpot<br><small>15 users</small></td>
+                    <td><div class="fit fit-medium"></div></td>
+                    <td><div class="activity-bar"><div class="activity-progress" style="width: 50%;"></div></div></td>
+                    <td><canvas id="healthScore3" width="80" height="80"></canvas></td>
+                </tr>
+                <!-- Row for Samsung -->
+                <tr>
+                    <td>Samsung<br><small>2 users</small></td>
+                    <td><div class="fit fit-bad"></div></td>
+                    <td><div class="activity-bar"><div class="activity-progress" style="width: 10%;"></div></div></td>
+                    <td><canvas id="healthScore4" width="80" height="80"></canvas></td>
+                </tr>
+                <!-- Row for Bosch -->
+                <tr>
+                    <td>Bosch<br><small>1 users</small></td>
+                    <td><div class="fit fit-bad"></div></td>
+                    <td><div class="activity-bar"><div class="activity-progress" style="width: 5%;"></div></div></td>
+                    <td><canvas id="healthScore5" width="80" height="80"></canvas></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

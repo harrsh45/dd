@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    background-image: url(/tp.jpeg);
+}
+
+h1 {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #333333;
+}
+
+
+.fit {
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.fit-good {
+    background-color: green;
+}
+
+.fit-medium {
+    background-color: orange;
+}
+
+.fit-bad {
+    background-color: red;
+}
+
+
+.activity-bar {
+    background-color: #333333;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.activity-progress {
+    height: 100%;
+    background-color: #0099ff;
+    border-radius: 5px;
+}
+
+
+canvas {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    height: 8vh;
+}
